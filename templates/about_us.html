@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock custom_css %}
+{% block content %}
+<div class="about-section">
+  <h1>About Us</h1>
+<!--  <p> software Developer , web developer ( front end + backend ) , Data Analyst </p>-->
+  <p> Success is a class effort , commitment , consistency , patience and Knowledge all are attribute of this class
+  while Discipline is object of Success class .<br> I think by applying this we can achieve own goal </p>
+</div>
+<h2 style="text-align:center">MD MOINUDDIN</h2>
+<div class="row ml-5">
+  <div class="column">
+    <div class="card">
+       <img src="{% static 'img/pic1.jpg' %}" alt="Moinuddin" class="img-thumbnail" style="width:100% ">
+    </div>
+  </div>
+</div>
+<div class="us mt-0" style="margin-left:450px; margin-top:0px;">
+      <p>My name is Md Moinuddin i did own bachelor in B.tech with a stream of CSE in the year 2021.</p>
+      <p>I have hands-on experience on Python , Django , Flask , Javascript , html , Css , Bootstrap , Sql , MongoDB , ML <br> and NLP . </p>
+      <h3> Some Of My Project</h3>
+       <a href="http://armanjames.pythonanywhere.com" target="_blank">self Website</a><br>
+       <a href="https://movie-recommender-system-james.herokuapp.com" target="_blank">Movies Recommender System</a><br>
+       <a href="https://students-marks-prediction.herokuapp.com" target="_blank">Student Marks Prediction</a>
+</div>
+    {% endblock content %}
